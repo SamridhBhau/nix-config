@@ -10,13 +10,13 @@
     bind = [
       "$mod, Return, exec, $terminal"
       "$mod, Q, killactive"
-      "$mod, E, exit"
+      "$mod, E, exec, uwsm stop"
       "$mod, R, exec, $menu"
       "$mod, D, exec, $fileManager"
       "$mod, V, togglefloating"
       "$mod, P, pseudo" 
       "$mod SHIFT, J, togglesplit"
-      "$mod SHIFT, L, exec, hyprlock"
+      "ALT, Escape, exec, hyprlock"
 
 
       "$mod, h, movefocus, l"
@@ -30,6 +30,17 @@
       "$mod, 4, workspace, 4"
       "$mod, 5, workspace, 5"
 
+
+      "$mod SHIFT, h, movewindow, l"
+      "$mod SHIFT, j, movewindow, d"
+      "$mod SHIFT, k, movewindow, u"
+      "$mod SHIFT, l, movewindow, r"
+
+
+      "$mod CTRL, h, resizeactive, -80 0"
+      "$mod CTRL, j, resizeactive, 0 80"
+      "$mod CTRL, k, resizeactive, 0 -80"
+      "$mod CTRL, l, resizeactive, 80 0"
 
       "$mod SHIFT, 1, movetoworkspace, 1"
       "$mod SHIFT, 2, movetoworkspace, 2"

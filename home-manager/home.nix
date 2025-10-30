@@ -8,6 +8,7 @@
     ./nixvim
     ./rofi
     ./waybar
+    ./git
   ];
 
   home = {

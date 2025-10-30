@@ -12,7 +12,7 @@
     settings = {
       commit.gpgsign = true;
       gpg.format = "ssh";
-      user.signingkey = "~/.ssh/key.pub";
+      user.signingkey = "~/.ssh/sign_key.pub";
     };
   };
 }

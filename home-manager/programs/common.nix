@@ -10,7 +10,6 @@
     # feel free to add your own or remove some of them
 
     fastfetch
-    nnn # terminal file manager
 
     # archives
     zip
@@ -53,6 +52,7 @@
     # it provides the command `nom` works just like `nix`
     # with more details log output
     nix-output-monitor
+    nurl
 
     # productivity
     glow # markdown previewer in terminal

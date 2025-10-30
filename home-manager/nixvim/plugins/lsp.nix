@@ -36,6 +36,11 @@
             diagnostics.enable = false;
           };
         };
+
+        clangd = {
+          enable = true;
+
+        };
       };
     };
 

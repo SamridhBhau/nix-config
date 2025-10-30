@@ -1,4 +1,4 @@
-{ username, ... }:
+{username, ... }:
 
 {
   imports = [
@@ -16,13 +16,6 @@
   };
 
 
-  programs.git = {
-    enable = true;
-    settings = {
-      user.name = "sam";
-      user.email = "sb.samridhbhau@gmail.com";
-    };
-  };
 
 
   # This value determines the home Manager release that your

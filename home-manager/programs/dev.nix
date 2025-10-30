@@ -5,7 +5,5 @@
 }:{
   
   home.packages = with pkgs; [
-    libgcc
   ];
-  
 }

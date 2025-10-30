@@ -15,6 +15,16 @@
       desc = "Seach files";
     };
   }
+
+  {
+    action = ":Telescope live_grep<CR>";
+    key = "<leader>sg";
+    options = {
+      silent = true;
+      noremap = true;
+      desc = "Telescope Grep";
+    };
+  }
   ];
 
 }

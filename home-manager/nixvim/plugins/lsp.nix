@@ -18,7 +18,6 @@
           gi = "implementation";
           gt = "type_definition";
         };
-
       };
 
       servers = {

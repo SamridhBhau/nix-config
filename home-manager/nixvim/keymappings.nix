@@ -25,6 +25,16 @@
       desc = "Telescope Grep";
     };
   }
+  {
+    action = ":Telescope help_tags<CR>";
+    key = "<leader>sh";
+    options = {
+      silent = true;
+      noremap = true;
+      desc = "Telescope help_tags";
+    };
+  }
+
   ];
 
 }

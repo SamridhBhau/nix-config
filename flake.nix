@@ -19,9 +19,11 @@
     nixcord = {
       url = "github:kaylorben/nixcord";
     };
+
+    awww.url = "git+https://codeberg.org/LGFae/awww";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable,home-manager, nixvim, nixcord, ... }: {
+  outputs = { self, nixpkgs, nixpkgs-stable,home-manager, ... }@inputs: {
 
     nixosConfigurations ={
       "victus" =  nixpkgs.lib.nixosSystem rec {
@@ -29,12 +31,12 @@
           username = "sam";
           system = "x86_64-linux";
         in {
-          inherit home-manager nixvim username nixcord;
-
           pkgs-stable = import nixpkgs-stable {
             inherit system;
             config.allowUnfree = true;
           };
+
+          inherit inputs username;
         };
         modules = [
           ./nixos-victus/configuration.nix

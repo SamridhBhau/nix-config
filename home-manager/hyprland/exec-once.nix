@@ -1,5 +1,6 @@
 {
   wayland.windowManager.hyprland.settings.exec-once = [
-    "uwsm app -- waybar"
+    "uwsm app -- waybar &"
+    "init-wall &"
   ];
 }

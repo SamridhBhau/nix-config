@@ -1,10 +1,10 @@
 {
-  nixvim,
-    ...
+  inputs,
+  ...
 }:
 {
   imports = [
-    nixvim.homeModules.nixvim
+    inputs.nixvim.homeModules.nixvim
   ]; 
 
   programs.nixvim.imports = [ 

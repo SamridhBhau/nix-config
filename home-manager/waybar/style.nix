@@ -22,6 +22,7 @@ in
       border: none;
       padding: 0;
       margin: 0;
+      border-radius: 5px;
     }
     window#waybar {
       background: transparent;
@@ -39,10 +40,12 @@ in
 
     #workspaces button.active {
       color: ${purple};
+      background-color: ${bg};
     }
 
     #tray {
       margin-right: 10px;
+      background-color: ${bg};
     }
     
     #network, #battery, #wireplumber {

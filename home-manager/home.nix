@@ -9,6 +9,8 @@
     ./rofi
     ./waybar
     ./git
+    ./wallpapers
+    ./scripts
   ];
 
   home = {

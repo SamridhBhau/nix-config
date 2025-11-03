@@ -52,6 +52,7 @@
       "$mod, mouse_up, workspace, e-1"
 
 
+
       "$mod, F, fullscreen, 0"
       "$mod SHIFT, F, fullscreen, 1"
 
@@ -60,6 +61,10 @@
       "$mod, S, exec, grimblast save screen"
       "$mod SHIFT, S, exec, grimblast save area"
       "$mod CTRL, S, exec, grimblast copy area"
+
+
+      # Wallpaper
+      "$mod, W, exec, pick-wall"
     ];
 
    bindm = [

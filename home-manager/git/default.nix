@@ -3,7 +3,10 @@
 }:
 {
   
-  services.ssh-agent.enable = true;
+  services.ssh-agent = {
+    enable = true;
+    enableBashIntegration = true;
+  };
   programs.git = {
     enable = true;
     settings = {

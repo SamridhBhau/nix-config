@@ -3,6 +3,7 @@
     ./telescope.nix
     ./lsp.nix
     ./completion.nix
+    ./oil.nix
   ];
 
   plugins = {

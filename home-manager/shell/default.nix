@@ -6,6 +6,7 @@
     ./bash.nix
     ./quitcd.nix
     ./starship.nix
+    ./eza.nix
   ]; 
 
   home.file.".config/alacritty/tokyonight.toml".source = ./tokyonight.toml; 

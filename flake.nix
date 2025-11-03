@@ -15,9 +15,13 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixcord = {
+      url = "github:kaylorben/nixcord";
+    };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable,home-manager, nixvim,... }: {
+  outputs = { self, nixpkgs, nixpkgs-stable,home-manager, nixvim, nixcord, ... }: {
 
     nixosConfigurations ={
       "victus" =  nixpkgs.lib.nixosSystem rec {
@@ -25,7 +29,7 @@
           username = "sam";
           system = "x86_64-linux";
         in {
-          inherit home-manager nixvim username;
+          inherit home-manager nixvim username nixcord;
 
           pkgs-stable = import nixpkgs-stable {
             inherit system;

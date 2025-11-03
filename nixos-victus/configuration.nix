@@ -16,6 +16,9 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.configurationLimit = 5;
   boot.loader.timeout = 5;
+  boot.plymouth = {
+    enable = true;
+  };
 
   networking.hostName = "victus"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

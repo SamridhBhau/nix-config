@@ -13,6 +13,7 @@
     shiftwidth= 2;
     expandtab = true;
     autoindent = true;
+    splitright = true;
   };
 
   clipboard = {

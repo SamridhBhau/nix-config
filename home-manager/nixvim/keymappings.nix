@@ -9,6 +9,7 @@
   {
     action = ":Telescope find_files<CR>";
     key = "<leader>sf";
+    mode = "n";
     options = {
       silent = true;
       noremap = true;
@@ -19,6 +20,7 @@
   {
     action = ":Telescope live_grep<CR>";
     key = "<leader>sg";
+    mode = "n";
     options = {
       silent = true;
       noremap = true;
@@ -28,10 +30,21 @@
   {
     action = ":Telescope help_tags<CR>";
     key = "<leader>sh";
+    mode = "n";
     options = {
       silent = true;
       noremap = true;
       desc = "Telescope help_tags";
+    };
+  }
+
+  {
+    action = ":Oil<CR>";
+    key = "-";
+    options = {
+      silent = true;
+      noremap = true;
+      desc = "Open Oil";
     };
   }
 

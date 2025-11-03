@@ -59,6 +59,7 @@
       # Screenshot
       "$mod, S, exec, grimblast save screen"
       "$mod SHIFT, S, exec, grimblast save area"
+      "$mod CTRL, S, exec, grimblast copy area"
     ];
 
    bindm = [

@@ -2,7 +2,6 @@
   description = "A simple NixOS flake";
 
   inputs = {
-
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
 
@@ -32,7 +31,7 @@
           system = "x86_64-linux";
         in {
           pkgs-stable = import nixpkgs-stable {
-            inherit system;
+            stdenv.hostPlatfom.system = system;
             config.allowUnfree = true;
           };
 

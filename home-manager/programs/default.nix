@@ -12,6 +12,6 @@
   ];
 
   home.packages = [
-      inputs.awww.packages.${pkgs.system}.awww
+      inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
   ];
 }

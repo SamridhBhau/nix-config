@@ -79,5 +79,6 @@
     nerd-fonts.jetbrains-mono
     font-awesome
 
+    networkmanagerapplet
   ];
 }

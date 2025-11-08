@@ -11,6 +11,7 @@
     ./git
     ./wallpapers
     ./scripts
+    ./ssh.nix
   ];
 
   home = {

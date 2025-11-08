@@ -2,11 +2,6 @@
   ...
 }:
 {
-  
-  services.ssh-agent = {
-    enable = true;
-    enableBashIntegration = true;
-  };
   programs.git = {
     enable = true;
     settings = {
@@ -20,4 +15,5 @@
       user.signingkey = "~/.ssh/sign_key.pub";
     };
   };
+
 }
